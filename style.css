@@ -16,14 +16,16 @@ main {
 
 /* ナビ */
 nav {
-  border-bottom: 1px solid #eee;
+  max-width: 720px;
+  margin: 0 auto;
   padding: 16px;
+  border-bottom: 1px solid #eee;
 }
 
 nav a {
   color: #222;
   text-decoration: none;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 nav a:hover {
