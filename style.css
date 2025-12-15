@@ -1,22 +1,56 @@
+/* 全体 */
 body {
+  margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  margin: 40px;
-  line-height: 1.6;
+  color: #222;
+  background: #fff;
+  line-height: 1.7;
 }
 
-h1 {
-  font-size: 28px;
+/* レイアウト */
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
 }
 
+/* ナビ */
 nav {
-  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding: 16px;
 }
 
 nav a {
+  color: #222;
   text-decoration: none;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* 見出し */
+h1 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+/* リスト */
+ul {
+  padding-left: 20px;
+}
+
+/* フッター */
+footer {
+  max-width: 720px;
+  margin: 60px auto 20px;
+  padding: 0 16px;
+  color: #777;
+  font-size: 14px;
 }
