@@ -18,14 +18,16 @@ main {
 nav {
   max-width: 720px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 0 16px;
+  height: 56px;              /* ← 高さ固定 */
+  display: flex;
+  align-items: center;       /* ← 縦位置を揃える */
   border-bottom: 1px solid #eee;
 }
 
 nav a {
-  color: #222;
-  text-decoration: none;
   margin-right: 16px;
+  line-height: 1;            /* ← 行高さの差を消す */
 }
 
 nav a:hover {
