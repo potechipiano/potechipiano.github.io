@@ -1,4 +1,8 @@
-/* 全体 */
+/* ベース */
+html {
+  overflow-y: scroll; /* ページ差のズレ防止 */
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -7,42 +11,70 @@ body {
   line-height: 1.7;
 }
 
-/* レイアウト */
-main {
-  max-width: 720px;
-  margin: 40px auto;
-  padding: 0 16px;
-}
-
-/* ナビ */
+/* 上部ナビ（共通） */
 nav {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 16px;
-  height: 56px;              /* ← 高さ固定 */
-  display: flex;
-  align-items: center;       /* ← 縦位置を揃える */
+  padding: 16px;
   border-bottom: 1px solid #eee;
 }
 
 nav a {
+  color: #222;
+  text-decoration: none;
   margin-right: 16px;
-  line-height: 1;            /* ← 行高さの差を消す */
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-/* 見出し */
-h1 {
+/* メイン */
+main {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* パンくず */
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ページ先頭（タイトル＋説明） */
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
   font-size: 28px;
-  margin-top: 0;
+  margin: 0;
+}
+
+.page-desc {
+  margin-top: 8px;
+  color: #555;
+}
+
+/* セクション */
+section {
+  margin-bottom: 32px;
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 /* リスト */
@@ -50,10 +82,14 @@ ul {
   padding-left: 20px;
 }
 
+li {
+  margin-bottom: 4px;
+}
+
 /* フッター */
 footer {
   max-width: 720px;
-  margin: 60px auto 20px;
+  margin: 48px auto 24px;
   padding: 0 16px;
   color: #777;
   font-size: 14px;
