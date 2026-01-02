@@ -11,24 +11,6 @@ body {
   line-height: 1.7;
 }
 
-/* 上部ナビ（共通） */
-nav {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 16px;
-  border-bottom: 1px solid #eee;
-}
-
-nav a {
-  color: #222;
-  text-decoration: none;
-  margin-right: 16px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 /* メイン */
 main {
   max-width: 720px;
